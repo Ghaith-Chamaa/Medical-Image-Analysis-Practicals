@@ -2,7 +2,7 @@
 
 This repository contains the completed practicals and lab assignments for the Medical Image Analysis course. It covers topics from fundamental image color theory and segmentation to advanced signal processing for physiological measurement from video.
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Project Goal](#-project-goal)
 - [Key Topics Covered](#-key-topics-covered)
@@ -13,11 +13,11 @@ This repository contains the completed practicals and lab assignments for the Me
   - [Practical 2: Remote Photoplethysmography (rPPG) from Video](#practical-2-remote-photoplethysmography-rppg-from-video)
 - [Acknowledgements](#-acknowledgements)
 
-## 🎯 Project Goal
+## Project Goal
 
 The goal of this repository is to document and showcase the hands-on work completed for the Medical Image Analysis course. Each practical implements a core concept, demonstrating a progression from basic image manipulation to the development of a complete pipeline for a real-world biomedical application.
 
-## 💡 Key Topics Covered
+## Key Topics Covered
 
 - **Image Processing:** Color space transformations (RGB, HSV, CIEL*a*b*), filtering, and histogram analysis.
 - **Image Segmentation:** Color-based thresholding and object isolation.
@@ -26,7 +26,7 @@ The goal of this repository is to document and showcase the hands-on work comple
 - **Computer Vision:** Face detection (Haar Cascades), feature tracking (Kanade-Lucas-Tomasi optical flow), and skin pixel detection (histogram backprojection).
 - **Physiological Computing:** Implementation of a complete remote photoplethysmography (rPPG) pipeline to estimate heart rate from video.
 
-## ⚙️ Setup and Installation
+## Setup and Installation
 
 Follow these steps to set up the project environment.
 
@@ -39,7 +39,7 @@ Follow these steps to set up the project environment.
     cd Medical-Image-Analysis-Practicals
     ```
 
-## 🚀 Usage Guide
+## Usage Guide
 
 ### Running Practical 1 (Jupyter Notebook)
 
@@ -67,7 +67,7 @@ The main entry point for the second practical is `main.py`. It can be executed f
     *   `--WINLENGTHSEC`: The length of the sliding window in seconds for HR analysis.
     *   `--VERBOSE`: Controls console output and plot visibility.
 
-## 🔬 Practicals Overview
+## Practicals Overview
 
 ### Practical 1: Color, Spectral Imaging, and Segmentation
 
@@ -93,6 +93,6 @@ This practical implements a complete, end-to-end system for estimating heart rat
 
 3.  **Heart Rate Estimation:** Finally, `get_hr_from_pulse.py` takes the clean pulse signal and calculates the heart rate. It uses a **sliding window approach**, analyzing short, overlapping segments of the signal. Within each window, a Fast Fourier Transform (FFT) with zero-padding is applied to obtain a high-resolution frequency spectrum. The dominant peak in this spectrum corresponds to the heart rate in Hz, which is converted to Beats Per Minute (BPM). The script compares its own estimation against a ground-truth signal and calculates the Mean Absolute Error (MAE) to evaluate performance.
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 A special thanks to the instructor, **Franck Marzani** & **Antony Madaleno** for practical 1 & **Yannick Benezeth** for practical 2, for providing the foundational code and guidance for these practicals.
